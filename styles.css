@@ -1,0 +1,242 @@
+*{
+  margin:0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth; 
+}
+
+/* INICIO HEADER */
+.nav{
+  background-color: #181818;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top:0;
+  z-index: 9;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 28px;
+}
+
+.nav-list a{
+  text-decoration: none;
+  color: #DDD;
+  padding: 20px;
+}
+
+.nav-list a:hover{
+  color: #FFFFFF;
+}
+/* FIM HEADER */
+
+
+/* INICIO MAIN */
+.main {
+  color :#000;
+  position: relative; /* Define um contexto para posicionamento */
+  width: 100%; /* Ocupa toda a largura da página */
+  height: calc(100vh - 80px); /* Altura do container */
+  display: flex; /* Alinha o texto */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  padding-left: 10%; /* Espaçamento à esquerda */
+  overflow: hidden; /* Impede que o vídeo ultrapasse o limite */
+}
+
+.main .background-video {
+  position: absolute; /* Posiciona o vídeo em relação à .main */
+  top: 0;
+  left: 0; /* Garante que o vídeo comece no topo e na esquerda */
+  width: 100%; /* Faz o vídeo preencher toda a largura */
+  height: 100%; /* Faz o vídeo preencher toda a altura */
+  object-fit: cover; /* Ajusta o vídeo sem distorcer */
+  opacity: 0.5; /* Torna o vídeo mais translúcido */
+  pointer-events: none; /* Evita interferência do mouse no vídeo */
+}
+
+.main h1 {
+  color: #000;
+  font-size: 54px;
+  z-index: 1; /* Garante que o título fique acima do vídeo */
+}
+
+.main p {
+  font-size: 21px;
+  font-style: italic;
+  color: #0a74d1;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  z-index: 1; /* Garante que o texto fique acima do vídeo */
+}
+
+.call-to-action {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: 0;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.9s;
+  z-index: 1; /* Garante que o botão fique acima do vídeo */
+}
+
+.call-to-action:hover {
+  transform: scale(1.1);
+}
+
+.main a {
+  text-decoration: none;
+  color: #181818;
+  z-index: 1; /* Garante que o link fique acima do vídeo */
+}
+/* FIM MAIN */
+
+/* INICIO ABOUT */
+.about{
+ background-color: #FFFFFF;
+ width: 100%; 
+ padding-left: 10%;
+ padding-right: 10%;
+ padding-top: 80px;
+ padding-bottom: 80px;
+
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.about p {
+  font-size: 18px; /* Tamanho de fonte do texto */
+  line-height: 1.8; /* Espaçamento entre as linhas */
+  text-align: justify; /* Justifica o texto para um visual mais alinhado */
+}
+
+.about div{
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+.about img{
+  max-width: 450px;
+  border-radius: 8px;
+}
+
+.about div h2{
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+/* FIM ABOUT */
+
+/* INICIO PROJECTS */
+.projects{
+  width: 100%;
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+
+
+.projects h2{
+  font-size: 32px;
+  color: #DDD;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.projects p{
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.project-list{
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre imagens e vídeos */
+}
+
+/* Estilo específico para imagens */
+.projects img {
+  width: 10%; /* Tamanho das imagens */
+  margin-left: 0.1%;
+  margin-right: 0.1%;
+  opacity: 0.6; /* Imagens mais opacas por padrão */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transição mais suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.projects img:hover {
+  opacity: 1; /* Fica totalmente visível no hover */
+  transform: scale(1.1); /* Aumenta levemente no hover */
+}
+
+/* Estilo específico para vídeos */
+.projects .project-video {
+  width: 10%; /* Tamanho dos vídeos */
+  border-radius: 8px; /* Bordas arredondadas como nas imagens */
+  opacity: 0.6; /* Imagens mais opacas por padrão */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transição mais suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Mesma sombra das imagens */
+  object-fit: cover; /* Ajusta o vídeo sem distorcer */
+  height: auto; /* Mantém proporção */
+}
+
+.projects .project-video:hover {
+  opacity: 1; /* Fica totalmente visível no hover */
+  transform: scale(1.1); /* Aumenta levemente no hover */
+}
+
+.action{
+  background-color: #181818;
+  border:0;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-top: 18px;
+  cursor: pointer;
+}
+/* FIM PROJECTS */
+
+/* INICIO RODAPE */
+footer{
+  width: 100%;
+  background-color: #181818;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer p {
+  margin-left: 12px;
+}
+/* FIM RODAPE */
