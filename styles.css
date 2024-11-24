@@ -234,11 +234,6 @@ html{
   justify-content: space-between;
 }
 
-.Bravura h1 {
-  color: #000;
-  font-size: 54px;
-  z-index: 1; /* Garante que o título fique acima do vídeo */
-}
 
 .Bravura div{
   max-width: 50%;
