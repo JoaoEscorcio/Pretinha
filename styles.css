@@ -220,6 +220,60 @@ html{
 }
 /* FIM PROJECTS */
 
+/* INICIO BRAVURA*/
+.Bravura{
+  background-color: #FFFFFF;
+  width: 100%; 
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Bravura h1 {
+  color: #000;
+  font-size: 54px;
+  z-index: 1; /* Garante que o título fique acima do vídeo */
+}
+
+.Bravura div{
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+
+
+
+.Bravura div h2{
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+
+.Bravura p {
+  font-size: 18px; /* Tamanho de fonte do texto */
+  line-height: 1.8; /* Espaçamento entre as linhas */
+  text-align: justify; /* Justifica o texto para um visual mais alinhado */
+}
+
+
+
+.Bravura img {
+  max-width: 450px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+/* FIM BRAVURA */
+
 /* INICIO RODAPE */
 footer{
   width: 100%;
